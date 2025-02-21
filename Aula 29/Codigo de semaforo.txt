@@ -1,0 +1,52 @@
+/*
+Nome: Eduardo Lendrini Santos
+Data: 20/02/2025
+Descrição: Fiz um cruzamento na sala de aula 
+(Demorei mas consegui :D)
+*/
+
+#define LedRed01 13
+#define LedYellow01 12
+#define LedGreen01 11
+
+#define LedRed02 3
+#define LedYellow02 4
+#define LedGreen02 5
+
+#define TempoRed 5000
+#define TempoYellow 2000
+#define TempoGreen 3000
+
+void setup()
+{
+  pinMode(LedRed01, OUTPUT);
+  pinMode(LedYellow01, OUTPUT);
+  pinMode(LedGreen01, OUTPUT);
+  
+  pinMode (LedRed02, OUTPUT);
+  pinMode(LedYellow02, OUTPUT);
+  pinMode(LedGreen02, OUTPUT);
+}
+
+void loop()
+{  
+  digitalWrite(LedRed02,HIGH);
+  digitalWrite(LedGreen01, HIGH);
+  delay(TempoGreen);
+  digitalWrite(LedGreen01, LOW);
+  
+  digitalWrite(LedYellow01, HIGH);
+  delay(TempoYellow);
+  digitalWrite(LedYellow01, LOW);
+  digitalWrite(LedRed02, LOW);
+  
+  digitalWrite(LedRed01, HIGH);
+  digitalWrite(LedGreen02, HIGH);
+  delay(TempoGreen);
+  digitalWrite(LedGreen02, LOW);
+  
+  digitalWrite(LedYellow02, HIGH);
+  delay(TempoYellow);
+  digitalWrite(LedYellow02, LOW);
+  digitalWrite(LedRed01, LOW);
+}
