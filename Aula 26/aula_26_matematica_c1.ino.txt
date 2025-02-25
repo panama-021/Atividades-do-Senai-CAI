@@ -1,0 +1,94 @@
+/* 
+Nome do Autor: Eduardo Leandrini Santos
+Nome do Arquivo: Matemática
+Descrição: Uma aula sobre o arduíno sendo uma "calculadora" (n curto matemática)
+*/
+int valorFixo = 150;
+int resultado = 0;
+
+int valor1 = 4;
+int valor2 = 7;
+float resultadoReal = 0;
+
+void setup()
+{
+ Serial.begin(9600);
+ 
+  
+ //Atividade: 01
+ Serial.println("Atividade 01:");
+ int resultadoMap = map(valorFixo, 0, 1023, 0, 100);
+ int resultadoConstrain = constrain(resultado, 20, 80);
+ 
+ Serial.println(resultadoMap);
+ Serial.println(resultadoConstrain);
+ 
+  
+ //Atividade: 02
+ int valor = 0;
+  
+  //Incremento
+ Serial.println("Atividade 2:");
+ Serial.println("Incremento");
+  valor++;
+  Serial.println(valor);
+  valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+   valor++;
+  Serial.println(valor);
+  
+  //Decremento
+  Serial.println("Decremento:");
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  valor--;
+  Serial.println(valor);
+  
+  
+  //Atividade 3
+  Serial.println("Atividade 3:");
+  resultado = valor1 + valor2;
+  Serial.print("A soma do valor1 com valor2 eh: ");
+  Serial.println(resultado)
+  
+  resultadoReal = (float)resultado/ 2.0;
+  Serial.print("A divisao com numeros decimais: ");
+  Serial.println(resultadoReal, 1);
+  
+}
+
+void loop()
+{
+
+}
