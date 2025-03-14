@@ -1,3 +1,9 @@
+/*
+Autor: Eduardo Leandrini Santos
+Data:13/03/2025
+Descrição: Aprendendo a usar o display.
+*/
+
 #include <LiquidCrystal_I2C.h>
 #define pinBotao 2
 #define ledBlue 3
@@ -44,10 +50,5 @@ void loop()
     lcd.setCursor(0,0);
     }
   }
-  
-  
-  
-    
-  
    estadoBotaoAntes = estadoBotaoAtual;
 }
